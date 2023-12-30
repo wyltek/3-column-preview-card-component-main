@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --primary-bright-orange: hsl(31, 77%, 52%);
+    --primary-dark-cyan: hsl(184, 100%, 22%);
+    --primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --neutral-trans-white-p: hsla(0, 0%, 100%, 0.75);
+    --neutral-very-light-gray-bg-headings-btn: hsl(0, 0%, 95%);
+
+    --ff-lexend-deca-400: 'Lexend Deca', sans-serif;
+    --ff-big-shoulders-display-700: 'Big Shoulders Display', sans-serif;
+}
+
+/* The main layout and settings */
+
+body {
+    font-family: var(--ff-lexend-deca-400);
+    font-size: 15px;
+    background-color: var(--neutral-very-light-gray-bg-headings-btn);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: var(--ff-big-shoulders-display-700);
+    text-transform: uppercase;
+    color: var(--neutral-very-light-gray-bg-headings-btn);
+    padding-bottom: 32px;
+}
+
+p {
+    color: var(--neutral-trans-white-p);
+    line-height: 1.5;
+    font-size: 13px;
+    padding-bottom: 85px;
+}
+
+img {
+    padding-bottom: 32px;
+}
+
+button {
+    padding: 22px 27px;
+    border-radius: 40px;
+    border: none;
+}
+
+/* Main container */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sedans card */
+
+.left-card {
+    background-color: var(--primary-bright-orange);
+    width: 100%;
+    height: 100%;
+    padding: 44px 61px 49px 47px;
+
+}
+
+/* Sedans button "learn more" */
+
+.left-btn {
+    color: var(--primary-bright-orange);
+    background-color: var(--neutral-very-light-gray-bg-headings-btn);
+    font-family: var(--ff-lexend-deca-400);
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.left-btn:hover {
+    background-color: var(--primary-bright-orange);
+    border: 1px solid white;
+    color: var(--neutral-very-light-gray-bg-headings-btn);
+}
+
+/* SUVS card */
+
+.middle-card {
+    background-color: var(--primary-dark-cyan);
+    width: 100%;
+    height: 100%;
+    padding: 44px 61px 49px 47px;
+}
+
+/* SUVS button "learn more" */
+
+.middle-btn {
+    color: var(--primary-dark-cyan);
+    background-color: var(--neutral-very-light-gray-bg-headings-btn);
+    font-family: var(--ff-lexend-deca-400);
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.middle-btn:hover {
+    background-color: var(--primary-dark-cyan);
+    border: 1px solid white;
+    color: var(--neutral-very-light-gray-bg-headings-btn);
+}
+
+/* Luxury card */
+
+.right-card {
+    background-color: var(--primary-very-dark-cyan);
+    width: 100%;
+    height: 100%;
+    padding: 44px 61px 49px 47px;
+}
+
+/* Luxuty button "learn more" */
+
+.right-btn {
+    color: var(--primary-very-dark-cyan);
+    background-color: var(--neutral-very-light-gray-bg-headings-btn);
+    font-family: var(--ff-lexend-deca-400);
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.right-btn:hover {
+    background-color: var(--primary-very-dark-cyan);
+    border: 1px solid white;
+    color: var(--neutral-very-light-gray-bg-headings-btn);
+}
+
+/* Responsive Layout */
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 15px;
+    }
+}
